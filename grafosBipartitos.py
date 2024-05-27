@@ -15,10 +15,10 @@ def ventanaBipartito(ventana):
     # Crear el Label con el texto ajustado al tamaño de la ventana
     label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
-    button_dibujar = tk.Button(ventana, foreground="#80DAEB", text="Generar grafo Bipartito", command=grafoBipartito, fg="black")
+    button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Generar grafo Bipartito", command=grafoBipartito)
     button_dibujar.pack()
     button_dibujar.place(x=100, y=100)
-    button_dibujarPropio=tk.Button(ventana, foreground="#80DAEB", text="Dibujar grafo Bipartito", command=dibujarGrafoBipartito, fg="black")
+    button_dibujarPropio=tk.Button(ventana, foreground="white", background="#80DAEB", text="Dibujar grafo Bipartito", command=dibujarGrafoBipartito)
     button_dibujarPropio.pack()
     button_dibujarPropio.place(x=100, y=200)
     ventana.mainloop()

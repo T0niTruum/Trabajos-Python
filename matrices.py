@@ -25,7 +25,7 @@ def ventanaMatrices(ventana):
     definicion_incidencia.pack()
 
     # Botón para dibujar el grafo
-    button_dibujar = tk.Button(ventana, foreground="#80DAEB", text="Dibujar Grafo", command=dibujarGrafo, fg="black")
+    button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Dibujar Grafo", command=dibujarGrafo)
     button_dibujar.pack()
 
     ventana.mainloop()

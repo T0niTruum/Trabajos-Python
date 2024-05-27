@@ -14,7 +14,7 @@ def ventanaAciclico(ventana):
     label.pack()
 
     # Botón para dibujar el grafo
-    button_dibujar = tk.Button(ventana, foreground="#80DAEB", text="Verificar si un grafo es aciclico", command=verificar_grafoAciclico, fg="black")
+    button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Verificar si un grafo es aciclico", command=verificar_grafoAciclico)
     button_dibujar.pack()
 
     ventana.mainloop()

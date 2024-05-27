@@ -13,7 +13,7 @@ def ventanaRegular(ventana):
     # Crear el Label con el texto ajustado al tamaño de la ventana
     label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
-    button_dibujar = tk.Button(ventana, foreground="#80DAEB", text="Verificar Grafo Regular", command=grafoRegular, fg="black")
+    button_dibujar = tk.Button(ventana,foreground="white", background="#80DAEB", text="Verificar Grafo Regular", command=grafoRegular)
     button_dibujar.pack()
     ventana.mainloop()
 

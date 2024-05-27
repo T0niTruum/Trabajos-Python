@@ -17,10 +17,8 @@ def ventanaBipartito(ventana):
     label.pack()
     button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Generar grafo Bipartito", command=grafoBipartito)
     button_dibujar.pack(pady=15)
-    button_dibujar.place(y=100)
     button_dibujarPropio=tk.Button(ventana, foreground="white", background="#80DAEB", text="Dibujar grafo Bipartito", command=dibujarGrafoBipartito)
     button_dibujarPropio.pack(pady=5)
-    button_dibujarPropio.place(y=200)
     ventana.mainloop()
 
     return ventana

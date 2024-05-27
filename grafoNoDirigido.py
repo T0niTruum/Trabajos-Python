@@ -7,7 +7,7 @@ import random
 def ventanaNoDirigido(ventana):
     ventana = tk.Tk()
     ventana.title("Grafo No Dirigido")
-    ventana.geometry("500x250")
+    ventana.geometry("500x150")
     
     # Función para mostrar información sobre grafo no dirigido
     texto = "Un grafo no dirigido es un tipo de grafo en el cual sus aristas no constan de una dirección, lo cual permite recorrer el grafo en cualquier dirección. "
@@ -16,9 +16,9 @@ def ventanaNoDirigido(ventana):
 
     # Botón para dibujar el grafo
     button_dibujar = tk.Button(ventana, text="Dibujar grafo No Dirigido", command=dibujar_grafoNoDirigido, fg="black")
-    button_dibujar.pack()
-    button_ejemplo =tk.Button(ventana, text="Generar grafo de ejemplo", command=dibujar_grafoRandom, fg ="black")
-    button_ejemplo.pack()
+    button_dibujar.pack(pady=15)
+    button_ejemplo =tk.Button(ventana, text="Grafo de ejemplo", command=dibujar_grafoRandom, fg ="black")
+    button_ejemplo.pack(pady=5)
 
     ventana.mainloop()
 

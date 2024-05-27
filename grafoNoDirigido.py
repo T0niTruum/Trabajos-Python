@@ -15,9 +15,9 @@ def ventanaNoDirigido(ventana):
     label.pack()
 
     # Botón para dibujar el grafo
-    button_dibujar = tk.Button(ventana, text="Dibujar grafo No Dirigido", command=dibujar_grafoNoDirigido, fg="black")
+    button_dibujar = tk.Button(ventana, fg="#80DAEB", text="Dibujar grafo No Dirigido", command=dibujar_grafoNoDirigido, fg="black")
     button_dibujar.pack(pady=15)
-    button_ejemplo =tk.Button(ventana, text="Grafo de ejemplo", command=dibujar_grafoRandom, fg ="black")
+    button_ejemplo =tk.Button(ventana, fg="#80DAEB", text="Grafo de ejemplo", command=dibujar_grafoRandom, fg ="black")
     button_ejemplo.pack(pady=5)
 
     ventana.mainloop()

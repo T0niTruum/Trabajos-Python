@@ -48,6 +48,8 @@ def introduction_grafos():
         button = tk.Button(
             ventana,
             bg="#80DAEB",
+            fg="white",
+            activebackground="#ff0000",
             text=text, 
             font=font_body, 
             command=lambda cmd=command: cmd(ventana)

@@ -8,6 +8,7 @@ def ventanaRelaciones(ventana):
     ventana = tk.Tk()
     ventana.title("Relaciones")
     ventana.geometry("500x500")
+    ventana.configure(bg="#d2f4e4")
     texto = "Las relaciones se refieren a la existencia de aristas entre dos vertices "
     texto1="\n\nHay 3 tipos de relaxiones: \n -Asimetrica: La relacion entre los vertices es unidireccional, no reciproca\n si hay una Arista de A a B, no puede haber una de B a A"
     texto2="\n-Simetrica: Si existe una relacion de A a B, implica que existe una de B a A"
@@ -15,7 +16,7 @@ def ventanaRelaciones(ventana):
     texto4="\n\nEn los Grafos no dirigidos las aristas representan relaciones simetricas por naturaleza\n mientras que en los dirigidos si es posible saber la direccion"
 
 
-    label = tk.Label(ventana, text=texto+texto1+texto2+texto3+texto4)
+    label = tk.Label(ventana,bg="#d2f4e4", text=texto+texto1+texto2+texto3+texto4)
     label.pack()
 
     # img_path = "images/grafosRegulares-removebg-preview(1).png"

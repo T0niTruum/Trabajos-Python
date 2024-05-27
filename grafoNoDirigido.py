@@ -8,10 +8,11 @@ def ventanaNoDirigido(ventana):
     ventana = tk.Tk()
     ventana.title("Grafo No Dirigido")
     ventana.geometry("500x150")
+    ventana.configure(bg="#d2f4e4")
     
     # Función para mostrar información sobre grafo no dirigido
-    texto = "Un grafo no dirigido es un tipo de grafo en el cual sus aristas no constan de una dirección, lo cual permite recorrer el grafo en cualquier dirección. "
-    label = tk.Label(ventana, text=texto, wraplength=480)
+    texto = "Tipo de grafo en el que sus aristas no constan de una dirección, permitiendo recorrer el grafo en cualquier dirección."
+    label = tk.Label(ventana, bg="#d2f4e4",text=texto, wraplength=480)
     label.pack()
 
     # Botón para dibujar el grafo

@@ -6,11 +6,12 @@ import matplotlib.pyplot as plt
 def ventanaAciclico(ventana):
     ventana = tk.Tk()
     ventana.title("Grafo Aciclico")
-    ventana.geometry("500x200")
+    ventana.geometry("500x100")
+    ventana.configure(bg="#d2f4e4")
     
     # Función para mostrar información sobre grafo aciclico
     texto = "Un gráfico acíclico es un gráfico sin ciclos (un ciclo es un circuito completo). Al seguir el gráfico de nodo a nodo, nunca visitará el mismo nodo dos veces."
-    label = tk.Label(ventana, text=texto, wraplength=480)
+    label = tk.Label(ventana, bg="#d2f4e4", text=texto, wraplength=480)
     label.pack()
 
     # Botón para dibujar el grafo

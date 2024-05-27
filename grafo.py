@@ -5,10 +5,11 @@ def ventana_queEs(ventana):
     ventana=tk.Tk()
     ventana.title("Definición de Grafo")
     ventana.geometry("300x75")
+    ventana.configure(bg="#d2f4e4")
     texto = "Pareja ordenada de la forma G(V,A).\nV representa un conjunto de vértices o nodos.\nA representa un conjunto de aristas."
     
     # Crear el Label con el texto ajustado al tamaño de la ventana
-    label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
+    label = tk.Label(ventana, bg="#d2f4e4", text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
     ventana.mainloop()
 

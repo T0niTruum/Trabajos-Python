@@ -9,10 +9,11 @@ def ventanaDirigido(ventana):
     ventana=tk.Tk()
     ventana.title("Grafo Dirigido")
     ventana.geometry("400x150")
+    ventana.configure(bg="#d2f4e4")
     texto = "Tipo de grafo en el cual las aristas presentan un sentido definido."
     
     # Crear el Label con el texto ajustado al tamaño de la ventana
-    label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
+    label = tk.Label(ventana, bg="#d2f4e4",text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
  # Botón para dibujar el grafo
     button_dibujar = tk.Button(

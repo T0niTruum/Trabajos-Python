@@ -8,10 +8,11 @@ def ventanaSimple(ventana):
     
     ventana = tk.Tk()
     ventana.title("Grafo Simple")
-    ventana.geometry("500x250")
-    texto = "Un grafo Simple es aquel que no tiene aristas paralelas ni ciclicas"
+    ventana.geometry("350x100")
+    ventana.configure(bg="#d2f4e4")
+    texto = "Grafo que no presenta aristas paralelas ni bucles en su topología"
 
-    label = tk.Label(ventana, text=texto, wraplength=480)
+    label = tk.Label(ventana, bg="#d2f4e4",text=texto, wraplength=480)
     label.pack()
 
     # img_path = "images/grafosRegulares-removebg-preview(1).png"
@@ -25,8 +26,7 @@ def ventanaSimple(ventana):
     button = tk.Button(
         ventana, foreground="white", background="#80DAEB", text="Dibujar grafo", command=lambda: dibujar_Simple()
     )
-    button.pack()
-    button.place(x=200, y=100)
+    button.pack(pady=15)
 
 
     ventana.mainloop()

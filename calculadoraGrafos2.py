@@ -17,36 +17,33 @@ def ventana_crear():
     ventana = tk.Tk()
     ventana.title("Teoría de Grafos")
     ventana.geometry("500x400")
-    ventana.configure(bg="#ffffff")  # Fondo gris claro
+    ventana.configure(bg="#d2f4e4")
 
     # Fuente personalizada
     font_title = font.Font(family="Malgun Gothic", size=14, weight="bold")
     font_body = font.Font(family="Malgun Gothic", size=12)
 
     titulo = tk.Label(
-        ventana, 
-        text="Presentado por:\nJean Kenneth Méndez Cuarán",
-        font=font_title,
-        bg="#eeeeee",
-        fg="#333333"
+        ventana,
+        bg="#d2f4e4", 
+        text="Estudiante:\nJean Kenneth Méndez Cuarán\nCódigo: 1.120.839.058",
+        font=font_body
     )
     titulo.pack(pady=20)  # Espacio superior e inferior
 
     presentado = tk.Label(
-        ventana, 
-        text="Presentado a:\nPedro Pablo Cardenas Alzate. Ph.D",
-        font=font_body,
-        bg="#eeeeee",
-        fg="#333333"
+        ventana,
+        bg="#d2f4e4",
+        text="Pedro Pablo Cardenas Alzate. Ph.D\nDocente",
+        font=font_body
     )
     presentado.pack(pady=10)
 
     cabeza = tk.Label(
-        ventana, 
-        text="Elija un tema de aprendizaje:", 
-        font=font_title,
-        bg="#eeeeee",
-        fg="#333333"
+        ventana,
+        bg="#d2f4e4", 
+        text="Temas de aprendizaje:", 
+        font=font_title
     )
     cabeza.pack(pady=30)
 

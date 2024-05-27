@@ -8,11 +8,12 @@ def ventanaTrayectoria(ventana):
     ventana = tk.Tk()
     ventana.title("Trayectorias")
     ventana.geometry("500x500")
+    ventana.configure(bg="#d2f4e4")
     texto = "Es la secuencia de vertices adyacentes recorridos,\n es decir que cada vertice consecutivo que se recorre esta conectado por una arista"
     texto1="\n\n-se pueden repetir nodos o vertices pero no aristas y su longitud es igual a la cantidad de aristas que recorrio"
     texto2="\n-Las trayectorias son utiles para comprender la conectividad entre vertices y las propiedades y estructura de un grafo"
 
-    label = tk.Label(ventana, text=texto+texto1+texto2)
+    label = tk.Label(ventana,bg="#d2f4e4", text=texto+texto1+texto2)
     label.pack()
 
     # img_path = "images/grafosRegulares-removebg-preview(1).png"

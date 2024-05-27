@@ -10,9 +10,11 @@ def ventana_conexo():
     # Función para mostrar la ventana emergente
     ventana = tk.Tk()
     ventana.title("Grafo Conexo")
+    ventana.configure(bg="#d2f4e4")
     tk.Label(
         ventana,
-        text="Un grafo conexo es un grafo en el que hay un camino entre cada par de vértices",
+        bg="#d2f4e4",
+        text="Grafo en el que todos sus vértices están conectados por un camino",
     ).pack()
     ventana.after(60000, ventana.destroy)  # Cerrar la ventana después de 1 minuto
     ventana.mainloop()

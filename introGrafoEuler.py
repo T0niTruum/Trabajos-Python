@@ -20,16 +20,17 @@ def introduccion_camino_euleriano():
 
 def ventanas_grafos_eulerianos():
     ventana = tk.Tk()
+    ventana.configure(bg="#d2f4e4")
 
     # Título para la sección de introducción al Grafo Euleriano
     titulo_grafo_euleriano = tk.Label(
-        ventana, text="Introducción Grafos Eulerianos", font=("Arial", 14, "bold")
+        ventana, bg="#d2f4e4",text="Introducción Grafos Eulerianos", font=("Malgun Gothic", 14, "bold")
     )
     titulo_grafo_euleriano.pack()
 
     # Contenido para la sección de introducción al Grafo Euleriano
     parte_1_grafo_euleriano = tk.Label(
-        ventana, text=introduccion_grafo_euleriano(), font=("Arial", 12)
+        ventana, bg="#d2f4e4",text=introduccion_grafo_euleriano(), font=("Malgun Gothic", 12)
     )
     parte_1_grafo_euleriano.pack()
 
@@ -42,13 +43,13 @@ def ventanas_grafos_eulerianos():
 
     # Título para la sección de introducción al Camino Euleriano
     titulo_camino_euleriano = tk.Label(
-        ventana, text="Introducción al Camino Euleriano", font=("Arial", 14, "bold")
+        ventana, bg="#d2f4e4",text="Introducción al Camino Euleriano", font=("Malgun Gothic", 14, "bold")
     )
     titulo_camino_euleriano.pack()
 
     # Contenido para la sección de introducción al Camino Euleriano
     parte_2_camino_euleriano = tk.Label(
-        ventana, text=introduccion_camino_euleriano(), font=("Arial", 12)
+        ventana, bg="#d2f4e4",text=introduccion_camino_euleriano(), font=("Malgun Gothic", 12)
     )
     parte_2_camino_euleriano.pack()
 

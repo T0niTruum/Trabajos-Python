@@ -7,12 +7,13 @@ def ventanaCompleto(ventana):
     #Funcion para mostrar que es un grafo
     ventana=tk.Tk()
     ventana.title("Grafo Completo")
-    ventana.geometry("500x250")
-    texto = "un grafo completo es un grafo simple donde cada par de vértices está conectado por una arista. \nUn grafo completo de n vértices tiene 𝑛(𝑛−1)/2 aristas, y se denota 𝐾𝑛. \nEs un grafo regular con todos sus vértices de grado 𝑛−1."
+    ventana.geometry("500x125")
+    ventana.configure(bg="#d2f4e4")
+    texto = "Un grafo completo es un grafo simple donde cada par de vértices está conectado por una arista."
 
     
     # Crear el Label con el texto ajustado al tamaño de la ventana
-    label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
+    label = tk.Label(ventana, bg="#d2f4e4", text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
     button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Dibujar grafo completo", command=grafoCompleto)
     button_dibujar.pack()

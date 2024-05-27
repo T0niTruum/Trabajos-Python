@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
+from tkinter import font
 import matplotlib.pyplot as plt
 import networkx as nx
 
@@ -7,13 +8,14 @@ def ventanaBipartito(ventana):
     #Funcion para mostrar que es un grafo
     ventana=tk.Tk()
     ventana.title("Grafo Bipartito")
-    ventana.geometry("500x250")
+    ventana.geometry("500x175")
+    ventana.configure(bg="#d2f4e4")
     texto = ("Un grafo bipartito es un grafo cuyos vértices se pueden separar en dos conjuntos disjuntos, de manera que las aristas no pueden relacionar vértices de un mismo conjunto. \n"
             "Un grafo bipartito puede considerarse si todos los vértices de uno de los subconjuntos están relacionados con los del otro subconjunto.")
 
     
     # Crear el Label con el texto ajustado al tamaño de la ventana
-    label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
+    label = tk.Label(ventana, bg="#d2f4e4", text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
     button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Generar grafo Bipartito", command=grafoBipartito)
     button_dibujar.pack(pady=15)

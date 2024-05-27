@@ -13,8 +13,8 @@ def euler_ventana_grafo(ventana):
 def crear_ventana():
     ventana = tk.Tk()  # Llama al constructor Tk() para crear la ventana
     ventana.title("Conexidad")  # Proporciona un título entre las comillas
-    ventana.geometry("500x200")  # tamaño de la ventana
-
+    ventana.geometry("400x275")  # tamaño de la ventana
+    ventana.configure(bg="#d2f4e4")
     # Estilo de fuente
     font = ("Malgun Gothic", 12)
 
@@ -30,7 +30,7 @@ def crear_ventana():
     }
 
     # Título
-    title_label = tk.Label(ventana, text="Seleccione una opción:", font=("Malgun Gothic", 16))
+    title_label = tk.Label(ventana, bg="#d2f4e4",text="Seleccione una opción:", font=("Malgun Gothic", 16))
     title_label.pack(pady=20)
 
     buttoneuler = tk.Button(

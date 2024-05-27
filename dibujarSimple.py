@@ -19,6 +19,7 @@ def dibujar_Simple():
     ventana = tk.Tk()
     ventana.title("Dibujo de Grafo y Verificación de Simplicidad")
     ventana.geometry("200x200")
+    ventana.configure(bg="#d2f4e4")
 
     # Crear un frame para contener el grafo y el resultado de la verificación
     frame = tk.Frame(ventana)

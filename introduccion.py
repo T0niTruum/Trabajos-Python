@@ -17,6 +17,7 @@ def introduction_grafos():
     ventana = tk.Tk()
     ventana.geometry("600x400")
     ventana.title("Introducción a la Teoría de Grafos")
+    ventana.configure(bg="#d2f4e4")
 
     # Fuente personalizada
     font_title = font.Font(family="Malgun Gothic", size=16, weight="bold")
@@ -25,6 +26,7 @@ def introduction_grafos():
     # Título
     label_title = tk.Label(
         ventana, 
+        bg="#d2f4e4",
         text="Introducción a la Teoría de Grafos", 
         font=font_title
     )

@@ -40,7 +40,7 @@ def introduction_grafos():
         ("Grafos regulares", ventanaRegular),
         ("Grafos bipartitos", ventanaBipartito),
         ("Grado de un nodo", dibujar_grafo),
-        ("Matrices de Adyacencia e Incidencia", ventanaMatrices),
+        ("Matrices Adyacencia/Incidencia", ventanaMatrices),
         ("Grafos Simples", ventanaSimple)
     ]
 

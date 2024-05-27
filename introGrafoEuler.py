@@ -12,8 +12,8 @@ def introduccion_grafo_euleriano():
 
 
 def introduccion_camino_euleriano():
-    texto = "UN camino eulerinaoi es un camino simple que recorre todas las aristas del grafo\n"
-    parte1 = "Un grafo no eulerinao es que permite un camino euleriano se llama semi-euleriano\n"
+    texto = "Un camino euleriano es un camino simple que recorre todas las aristas del grafo\n"
+    parte1 = "Un grafo no eulerinao que permite un camino euleriano se llama semi-euleriano\n"
     texto = texto + parte1
     return texto
 
@@ -23,7 +23,7 @@ def ventanas_grafos_eulerianos():
 
     # Título para la sección de introducción al Grafo Euleriano
     titulo_grafo_euleriano = tk.Label(
-        ventana, text="Introducción al Grafo Euleriano", font=("Arial", 14, "bold")
+        ventana, text="Introducción Grafos Eulerianos", font=("Arial", 14, "bold")
     )
     titulo_grafo_euleriano.pack()
 

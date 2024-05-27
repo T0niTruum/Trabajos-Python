@@ -14,7 +14,7 @@ def ventanaCompleto(ventana):
     # Crear el Label con el texto ajustado al tamaño de la ventana
     label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
-    button_dibujar = tk.Button(ventana, text="Dibujar grafo completo", command=grafoCompleto, fg="black")
+    button_dibujar = tk.Button(ventana, foreground="#80DAEB", text="Dibujar grafo completo", command=grafoCompleto, fg="black")
     button_dibujar.pack()
     ventana.mainloop()
 

@@ -23,7 +23,7 @@ def ventanaSimple(ventana):
     # canvas.pack()
 
     button = tk.Button(
-        ventana, text="Dibujar grafo", command=lambda: dibujar_Simple(), fg="red"
+        ventana, foreground="#80DAEB", text="Dibujar grafo", command=lambda: dibujar_Simple(), fg="red"
     )
     button.pack()
     button.place(x=200, y=100)

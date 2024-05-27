@@ -21,7 +21,7 @@ def ventanaDirigido(ventana):
         command=dibujar_grafoNoDirigido,
         fg="black")
     button_dibujar.pack(pady=15)
-    button_ejemplo =tk.Button(ventana, text="Generar grafo Dirigido de ejemplo", command=dibujar_grafoRandom, fg ="black")
+    button_ejemplo =tk.Button(ventana, foreground="#80DAEB", text="Generar grafo Dirigido de ejemplo", command=dibujar_grafoRandom, fg ="black")
     button_ejemplo.pack(pady=5)
 
     ventana.mainloop()

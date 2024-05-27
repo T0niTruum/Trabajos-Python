@@ -14,8 +14,9 @@ def crear_ventana_euler():
     label_titulo.pack()
     button_introducion_ciclos_eulerrianos = tk.Button(
         windwos,
+        foreground="#80DAEB",
         text="Introducción a los ciclos eulerianos",
-        command=ventanas_grafos_eulerianos,
+        command=ventanas_grafos_eulerianos
     )
     button_introducion_ciclos_eulerrianos.pack()
     button_introducion_ciclos_eulerrianos.place()

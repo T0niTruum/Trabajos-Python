@@ -8,7 +8,7 @@ def ventanaDirigido(ventana):
     #Funcion para mostrar que es un grafo
     ventana=tk.Tk()
     ventana.title("Grafo Dirigido")
-    ventana.geometry("500x250")
+    ventana.geometry("400x150")
     texto = "Tipo de grafo en el cual las aristas presentan un sentido definido."
     
     # Crear el Label con el texto ajustado al tamaño de la ventana
@@ -22,7 +22,7 @@ def ventanaDirigido(ventana):
         fg="black")
     button_dibujar.pack(pady=15)
     button_ejemplo =tk.Button(ventana, text="Generar grafo Dirigido de ejemplo", command=dibujar_grafoRandom, fg ="black")
-    button_ejemplo.pack(pady=10)
+    button_ejemplo.pack(pady=5)
 
     ventana.mainloop()
     return ventana

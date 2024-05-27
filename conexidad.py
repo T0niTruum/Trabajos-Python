@@ -13,7 +13,7 @@ def euler_ventana_grafo(ventana):
 def crear_ventana():
     ventana = tk.Tk()  # Llama al constructor Tk() para crear la ventana
     ventana.title("Conexidad")  # Proporciona un título entre las comillas
-    ventana.geometry("100x100")  # tamaño de la ventana
+    ventana.geometry("500x200")  # tamaño de la ventana
 
     # Estilo de fuente
     font = ("Malgun Gothic", 12)

@@ -7,7 +7,7 @@ def ventanaBipartito(ventana):
     #Funcion para mostrar que es un grafo
     ventana=tk.Tk()
     ventana.title("Grafo Bipartito")
-    ventana.geometry("500x350")
+    ventana.geometry("500x250")
     texto = ("Un grafo bipartito es un grafo cuyos vértices se pueden separar en dos conjuntos disjuntos, de manera que las aristas no pueden relacionar vértices de un mismo conjunto. \n"
             "Un grafo bipartito puede considerarse si todos los vértices de uno de los subconjuntos están relacionados con los del otro subconjunto.")
 
@@ -16,11 +16,11 @@ def ventanaBipartito(ventana):
     label = tk.Label(ventana, text=texto, wraplength=480)  # El wraplength define el ancho máximo antes de saltar de línea
     label.pack()
     button_dibujar = tk.Button(ventana, foreground="white", background="#80DAEB", text="Generar grafo Bipartito", command=grafoBipartito)
-    button_dibujar.pack()
-    button_dibujar.place(x=100, y=100)
+    button_dibujar.pack(pady=15)
+    button_dibujar.place(y=100)
     button_dibujarPropio=tk.Button(ventana, foreground="white", background="#80DAEB", text="Dibujar grafo Bipartito", command=dibujarGrafoBipartito)
-    button_dibujarPropio.pack()
-    button_dibujarPropio.place(x=100, y=200)
+    button_dibujarPropio.pack(pady=5)
+    button_dibujarPropio.place(y=200)
     ventana.mainloop()
 
     return ventana
